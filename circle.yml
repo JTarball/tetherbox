@@ -28,7 +28,7 @@ dependencies:
 # TODO: Deployment test (build and tag / run / destroy)
 test:
     pre:
-      - docker-compose up -d
+      - docker-compose -f test.yml up -d
       # Docker Images: Copy all tests into official folder and combine configs
       - sudo cp -r docker/app/tests/* ~/official-images/test/tests
       - docker login -e "$DOCKER_EMAIL" -u "$DOCKER_USER" -p "$DOCKER_PASS"
