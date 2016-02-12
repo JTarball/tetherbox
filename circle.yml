@@ -13,7 +13,7 @@ machine:
 # Generator install, scaffold in a new directory
 dependencies:
     pre:
-        # Remove services which will
+        # Remove services which will conflict
         - sudo killall redis-server 
         - sudo killall postgres
         - docker info
@@ -21,7 +21,7 @@ dependencies:
         - git clone https://github.com/docker-library/official-images.git ~/official-images
         - npm install -g npm
         - sudo apt-get install nodejs
-        - cd docker/app/app && npm install -g gulp bower && npm install && bower install
+        #- cd docker/app/app && npm install -g gulp bower && npm install && bower install
 
 
 # Run django tests, polymer tests
@@ -39,7 +39,7 @@ test:
       # TODO: Deployment test
     override:
       # Django Tests for Blog, Search & Accounts (Need to manually add to the end of this command)
-      - gulp test:local
+      # - gulp test:local
       - docker-compose run app sh -c "cd backend/ && mkdir -p _auto_circle-junit/django && py.test --junitxml=_auto_circle-junit/django/junit.xml apps/blog apps/search apps/accounts"
       - mv docker/app/app/backend/_auto_circle-junit/django $CIRCLE_TEST_REPORTS/
 
