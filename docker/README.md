@@ -27,10 +27,10 @@ such requires requirements etc.
 
 #### How was the 'base' directory created?
 the base directory is a submodule from docker-base repo
-git submodule add https://github.com/JTarball/docker-base.git base
+`git submodule add https://github.com/JTarball/docker-base.git base`
 
 #### How was the 'base' directory updated?
-git submodule update --remote --merge 
+`git submodule update --remote --merge` 
 
 ### 'app' directory
 This is the main docker image used for this project. This folder contains a directory 
