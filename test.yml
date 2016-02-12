@@ -35,4 +35,4 @@ rabbitmq:
   restart: always
   image: rabbitmq:latest
   ports:
-    - "5672:5672"
+    - "5673:5673"
