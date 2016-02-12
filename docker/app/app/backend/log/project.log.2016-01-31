@@ -1,0 +1,61 @@
+WARNING 1454256093.828510 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 45 MainProcess  170 30 2016-01-31 16:01:33,828 base 45 140005369149184 Not Found: /favicon.ico
+WARNING 1454257681.094389 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 44 MainProcess  170 30 2016-01-31 16:28:01,094 base 44 139701837928192 Not Found: /favicon.ico
+WARNING 1454257760.080549 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 46 MainProcess  170 30 2016-01-31 16:29:20,080 base 46 139670176724736 Not Found: /favicon.ico
+WARNING 1454258021.377430 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 46 MainProcess  170 30 2016-01-31 16:33:41,377 base 46 140447960643328 Not Found: /favicon.ico
+WARNING 1454259205.248804 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 23 MainProcess  170 30 2016-01-31 16:53:25,248 base 23 139909516662528 Not Found: /favicon.ico
+ERROR 1454259291.423796 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 28 MainProcess  256 40 2016-01-31 16:54:51,423 base 28 140008279000832 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 11, in <module>
+    from .views import ServiceViewSet
+  File "/app/backend/apps/services/views.py", line 17, in <module>
+    from .serializers import ServiceSerializer
+ImportError: cannot import name ServiceSerializer
+ERROR 1454259293.488287 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 28 MainProcess  256 40 2016-01-31 16:54:53,488 base 28 140008279000832 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 11, in <module>
+    from .views import ServiceViewSet
+  File "/app/backend/apps/services/views.py", line 17, in <module>
+    from .serializers import ServiceSerializer
+ImportError: cannot import name ServiceSerializer
+ERROR 1454259307.266114 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 33 MainProcess  256 40 2016-01-31 16:55:07,266 base 33 140612104087296 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 17, in <module>
+    post_list = PostViewSet.as_view({
+NameError: name 'PostViewSet' is not defined
+WARNING 1454259581.231495 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 33 MainProcess  170 30 2016-01-31 16:59:41,231 base 33 140612104087296 Not Found: /favicon.ico

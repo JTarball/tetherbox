@@ -1,0 +1,856 @@
+DEBUG 1455216456.099704 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 58 MainProcess  26 10 2016-02-11 18:47:36,099 views 58 139944944420608 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f476ea228d0>
+ERROR 1455216456.104953 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 58 MainProcess  256 40 2016-02-11 18:47:36,104 base 58 139944944420608 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455216498.787447 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 58 MainProcess  26 10 2016-02-11 18:48:18,787 views 58 139944944420608 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f476e934910>
+ERROR 1455216498.787738 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 58 MainProcess  256 40 2016-02-11 18:48:18,787 base 58 139944944420608 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455217023.494887 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 59 MainProcess  26 10 2016-02-11 18:57:03,494 views 59 140598654314240 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fdfa2e31090>
+ERROR 1455217023.495214 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 59 MainProcess  256 40 2016-02-11 18:57:03,495 base 59 140598654314240 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455217164.867216 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 95 MainProcess  26 10 2016-02-11 18:59:24,867 views 95 140625311250176 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fe5d7c37150>
+ERROR 1455217164.867553 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 95 MainProcess  256 40 2016-02-11 18:59:24,867 base 95 140625311250176 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455224995.132231 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 95 MainProcess  26 10 2016-02-11 21:09:55,132 views 95 139945210971904 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f477ea230d0>
+ERROR 1455224995.134369 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 95 MainProcess  256 40 2016-02-11 21:09:55,134 base 95 139945210971904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225183.516742 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 95 MainProcess  26 10 2016-02-11 21:13:03,516 views 95 139945210971904 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f477e8055d0>
+ERROR 1455225183.517631 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 95 MainProcess  256 40 2016-02-11 21:13:03,517 base 95 139945210971904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225329.798180 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 102 MainProcess  26 10 2016-02-11 21:15:29,798 views 102 139900597851904 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f3d1b7b50d0>
+ERROR 1455225329.798574 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 102 MainProcess  256 40 2016-02-11 21:15:29,798 base 102 139900597851904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225519.239953 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 102 MainProcess  26 10 2016-02-11 21:18:39,239 views 102 139900597851904 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f3d1b5ca2d0>
+ERROR 1455225519.240765 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 102 MainProcess  256 40 2016-02-11 21:18:39,240 base 102 139900597851904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225653.756627 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 102 MainProcess  26 10 2016-02-11 21:20:53,756 views 102 139900597851904 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f3d1b4df090>
+ERROR 1455225653.759891 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 102 MainProcess  256 40 2016-02-11 21:20:53,759 base 102 139900597851904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+WARNING 1455225658.590076 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 102 MainProcess  170 30 2016-02-11 21:20:58,590 base 102 139900597851904 Not Found: /services/instagram/subscription_callbachhh
+WARNING 1455225698.517143 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  170 30 2016-02-11 21:21:38,517 base 109 139628075222784 Not Found: /services/instagram/subscription_callbachhh
+DEBUG 1455225698.526982 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:21:38,526 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7e20290>
+ERROR 1455225698.527348 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:21:38,527 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225698.767888 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:21:38,767 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7b81190>
+ERROR 1455225698.768319 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:21:38,768 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225715.146132 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:21:55,146 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7b29b90>
+ERROR 1455225715.146523 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:21:55,146 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225715.913003 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:21:55,913 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7ac2bd0>
+ERROR 1455225715.913445 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:21:55,913 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225849.816463 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:09,816 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda79c6710>
+ERROR 1455225849.817125 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:09,817 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225861.825966 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:21,825 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7a46b90>
+ERROR 1455225861.826350 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:21,826 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225871.881521 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:31,881 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda79a1d90>
+ERROR 1455225871.881870 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:31,881 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225872.722846 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:32,722 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda78e0d10>
+ERROR 1455225872.723500 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:32,723 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225873.643586 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:33,643 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda77f8ad0>
+ERROR 1455225873.643975 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:33,643 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225873.757257 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:24:33,757 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda7726890>
+ERROR 1455225873.757752 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:24:33,757 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225900.798118 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:25:00,798 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda76ae550>
+ERROR 1455225900.798479 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:25:00,798 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455225901.241784 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:25:01,241 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda76aed90>
+ERROR 1455225901.242153 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:25:01,242 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225902.561498 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:25:02,561 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda75494d0>
+ERROR 1455225902.561892 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:25:02,561 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225908.712038 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:25:08,712 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda74cbfd0>
+ERROR 1455225908.712397 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:25:08,712 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455225908.826266 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 109 MainProcess  26 10 2016-02-11 21:25:08,826 views 109 139628075222784 subscription_callback_view, request: <rest_framework.request.Request object at 0x7efda75c8dd0>
+ERROR 1455225908.826765 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 109 MainProcess  256 40 2016-02-11 21:25:08,826 base 109 139628075222784 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455226043.259127 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 116 MainProcess  26 10 2016-02-11 21:27:23,259 views 116 140295420552960 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f9908c04190>
+ERROR 1455226043.259512 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 116 MainProcess  256 40 2016-02-11 21:27:23,259 base 116 140295420552960 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455226045.423044 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 116 MainProcess  26 10 2016-02-11 21:27:25,423 views 116 140295420552960 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f9908a13090>
+ERROR 1455226045.423464 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 116 MainProcess  256 40 2016-02-11 21:27:25,423 base 116 140295420552960 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455226673.387949 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 116 MainProcess  26 10 2016-02-11 21:37:53,387 views 116 140295420552960 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f9908993bd0>
+ERROR 1455226673.388280 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 116 MainProcess  256 40 2016-02-11 21:37:53,388 base 116 140295420552960 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455226678.262758 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 116 MainProcess  26 10 2016-02-11 21:37:58,262 views 116 140295420552960 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f99089237d0>
+ERROR 1455226678.263590 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 116 MainProcess  256 40 2016-02-11 21:37:58,263 base 116 140295420552960 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455226678.462956 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 116 MainProcess  26 10 2016-02-11 21:37:58,462 views 116 140295420552960 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f990887ab10>
+ERROR 1455226678.463309 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 116 MainProcess  256 40 2016-02-11 21:37:58,463 base 116 140295420552960 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455227268.225611 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 123 MainProcess  26 10 2016-02-11 21:47:48,225 views 123 140548963854080 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fd4111ea110>
+ERROR 1455227268.225957 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 123 MainProcess  256 40 2016-02-11 21:47:48,225 base 123 140548963854080 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455227446.539954 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 123 MainProcess  26 10 2016-02-11 21:50:46,539 views 123 140548963854080 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fd410f66c10>
+ERROR 1455227446.540605 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 123 MainProcess  256 40 2016-02-11 21:50:46,540 base 123 140548963854080 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 34, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1455227495.825252 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 130 MainProcess  26 10 2016-02-11 21:51:35,825 views 130 140385270499072 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fadf43b00d0>
+ERROR 1455227495.825707 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 130 MainProcess  256 40 2016-02-11 21:51:35,825 base 130 140385270499072 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455227495.837565 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 130 MainProcess  26 10 2016-02-11 21:51:35,837 views 130 140385270499072 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fadf42d3110>
+ERROR 1455227495.838025 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 130 MainProcess  256 40 2016-02-11 21:51:35,838 base 130 140385270499072 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+ERROR 1455228332.791156 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 137 MainProcess  256 40 2016-02-11 22:05:32,791 base 137 139767699494656 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 45, in <module>
+    url(r'^instagram/subscription_callback/', views.SnippetList.as_view(), name='subscription_callback'),
+AttributeError: 'module' object has no attribute 'SnippetList'
+ERROR 1455228875.331055 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 151 MainProcess  256 40 2016-02-11 22:14:35,331 base 151 140179905943296 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 12, in <module>
+    from .instagram import views
+  File "/app/backend/apps/services/instagram/views.py", line 31, in <module>
+    class MyView(APIView):
+  File "/app/backend/apps/services/instagram/views.py", line 32, in MyView
+    permission_classes = (permissions.IsAny,)
+AttributeError: 'module' object has no attribute 'IsAny'
+ERROR 1455228901.929409 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 151 MainProcess  256 40 2016-02-11 22:15:01,929 base 151 140179905943296 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() takes exactly 1 argument (2 given)
+ERROR 1455229233.124598 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 158 MainProcess  256 40 2016-02-11 22:20:33,124 base 158 140320626779904 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 35, in get
+    qpe = MyQueryParamsExpectations(data=request.QUERY_PARAMS)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 353, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 389, in QUERY_PARAMS
+    '`request.QUERY_PARAMS` has been deprecated in favor of `request.query_params` '
+NotImplementedError: `request.QUERY_PARAMS` has been deprecated in favor of `request.query_params` since version 3.0, and has been fully removed as of version 3.2.
+ERROR 1455229280.695095 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 172 MainProcess  256 40 2016-02-11 22:21:20,695 base 172 139933200205568 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 38, in get
+    return Response(qpe
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/response.py", line 40, in __init__
+    raise AssertionError(msg)
+AssertionError: You passed a Serializer instance as data, but probably meant to pass serialized `.data` or `.error`. representation.
+ERROR 1455229290.942852 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 179 MainProcess  256 40 2016-02-11 22:21:30,942 base 179 140644508477184 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 38, in get
+    return Response(qpe.data()
+TypeError: 'ReturnDict' object is not callable
+ERROR 1455229527.646429 views.py get ERROR views /app/backend/apps/services/instagram/views.py 214 MainProcess  37 40 2016-02-11 22:25:27,646 views 214 140457105127168 MyQueryParamsExpectations(data=<QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>):
+    mode = CharField()
+    challenge = CharField()
+    verify_token = CharField()
+INFO 1455229542.555520 views.py get INFO views /app/backend/apps/services/instagram/views.py 221 MainProcess  37 20 2016-02-11 22:25:42,555 views 221 139633731413760 MyQueryParamsExpectations(data=<QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>):
+    mode = CharField()
+    challenge = CharField()
+    verify_token = CharField()
+ERROR 1455229605.382918 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 228 MainProcess  256 40 2016-02-11 22:26:45,382 base 228 140539591902976 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 36, in get
+    logger.info("%s" % qpe.object)
+AttributeError: 'MyQueryParamsExpectations' object has no attribute 'object'
+ERROR 1455229710.782165 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 235 MainProcess  256 40 2016-02-11 22:28:30,782 base 235 139906518853376 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 36, in get
+    logger.info("%s" % qpe.object)
+AttributeError: 'MyQueryParamsExpectations' object has no attribute 'object'
+INFO 1455229906.559731 views.py get INFO views /app/backend/apps/services/instagram/views.py 242 MainProcess  36 20 2016-02-11 22:31:46,559 views 242 140277931128576 <QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>
+ERROR 1455229906.560822 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 242 MainProcess  256 40 2016-02-11 22:31:46,560 base 242 140277931128576 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 37, in get
+    if not qpe.is_valid():
+AttributeError: 'QueryDict' object has no attribute 'is_valid'
+INFO 1455229920.913103 views.py get INFO views /app/backend/apps/services/instagram/views.py 249 MainProcess  36 20 2016-02-11 22:32:00,913 views 249 140320821643008 <QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>
+ERROR 1455229920.914763 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 249 MainProcess  256 40 2016-02-11 22:32:00,914 base 249 140320821643008 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+INFO 1455230025.766040 views.py get INFO views /app/backend/apps/services/instagram/views.py 256 MainProcess  36 20 2016-02-11 22:33:45,766 views 256 140330800871168 <QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>
+INFO 1455230036.280350 views.py get INFO views /app/backend/apps/services/instagram/views.py 256 MainProcess  36 20 2016-02-11 22:33:56,280 views 256 140330800871168 <QueryDict: {u'hub.verify_token': [u'myVerifyToken'], u'hub.challenge': [u'15f7d1a91c1f40f8a748fd134752feb3'], u'hub.mode': [u'subscribe']}>
+DEBUG 1455230077.120776 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 263 MainProcess  52 10 2016-02-11 22:34:37,120 views 263 140209096152832 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f84ef6b2310>
+ERROR 1455230077.121239 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 263 MainProcess  256 40 2016-02-11 22:34:37,121 base 263 140209096152832 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455230091.283356 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 270 MainProcess  52 10 2016-02-11 22:34:51,283 views 270 140039754741504 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f5d81e1d2d0>
+ERROR 1455230091.283735 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 270 MainProcess  256 40 2016-02-11 22:34:51,283 base 270 140039754741504 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455230100.919937 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 277 MainProcess  52 10 2016-02-11 22:35:00,919 views 277 140223376254720 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f884291d2d0>
+ERROR 1455230100.920304 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 277 MainProcess  256 40 2016-02-11 22:35:00,920 base 277 140223376254720 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 468, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 396, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+DEBUG 1455230267.759108 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 291 MainProcess  52 10 2016-02-11 22:37:47,759 views 291 139844239632128 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f2ffc47c2d0>
+ERROR 1455231511.489677 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 298 MainProcess  256 40 2016-02-11 22:58:31,489 base 298 140113091602176 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 12, in <module>
+    from .instagram.views import subscription_callback_view
+  File "/app/backend/apps/services/instagram/views.py", line 12, in <module>
+    from instagram import subscriptions
+ImportError: cannot import name subscriptions
+ERROR 1455232297.123550 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 298 MainProcess  256 40 2016-02-11 23:11:37,123 base 298 140113091602176 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 12, in <module>
+    from .instagram.views import subscription_callback_view
+  File "/app/backend/apps/services/instagram/views.py", line 12
+    from .python-instagram import subscriptions
+                ^
+SyntaxError: invalid syntax
+ERROR 1455232324.039228 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 298 MainProcess  256 40 2016-02-11 23:12:04,039 base 298 140113091602176 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/app/backend/project/urls.py", line 17, in <module>
+    from services import urls as urls_services
+  File "/app/backend/apps/services/urls.py", line 12, in <module>
+    from .instagram.views import subscription_callback_view
+  File "/app/backend/apps/services/instagram/views.py", line 12, in <module>
+    from .wrapper import subscriptions
+  File "/app/backend/apps/services/instagram/wrapper/__init__.py", line 1, in <module>
+    from .bind import InstagramAPIError, InstagramClientError
+  File "/app/backend/apps/services/instagram/wrapper/bind.py", line 2, in <module>
+    from .oauth2 import OAuth2Request
+  File "/app/backend/apps/services/instagram/wrapper/oauth2.py", line 3, in <module>
+    from httplib2 import Http
+ImportError: No module named httplib2
+DEBUG 1455233976.351251 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 93 MainProcess  50 10 2016-02-11 23:39:36,351 views 93 139786249033472 subscription_callback_view, request: <rest_framework.request.Request object at 0x7f227bb9e550>

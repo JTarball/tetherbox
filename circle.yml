@@ -1,0 +1,64 @@
+#####
+# Circle CI
+# 
+# For running docker images on circle ci, see: https://circleci.com/docs/docker
+# For circle.yml explanation, see: https://circleci.com/docs/manually
+# Python specific configuration, see: https://circleci.com/docs/language-python
+#####
+
+machine:
+    services:
+        - docker
+
+# Generator install, scaffold in a new directory
+dependencies:
+    pre:
+        # Remove services which will
+        - sudo killall redis-server 
+        - sudo killall postgres
+        - docker info
+        - sudo pip install docker-compose
+        - git clone https://github.com/docker-library/official-images.git ~/official-images
+        - npm install -g npm
+        - sudo apt-get install nodejs
+        - cd docker/app/app && npm install -g gulp bower && npm install && bower install
+
+
+# Run django tests, polymer tests
+# TODO: Deployment test (build and tag / run / destroy)
+test:
+    pre:
+      - docker-compose up -d
+      # Docker Images: Copy all tests into official folder and combine configs
+      - sudo cp -r docker/app/tests/* ~/official-images/test/tests
+      - docker login -e "$DOCKER_EMAIL" -u "$DOCKER_USER" -p "$DOCKER_PASS"
+      - docker-compose ps
+      - docker tag dockerdjangopolymerstarterkit_app "$APP_TEST_IMAGE"
+      - docker push "$APP_TEST_IMAGE"
+      - ~/official-images/test/run.sh --config ~/official-images/test/config.sh --config docker/app/config.sh "$APP_TEST_IMAGE"
+      # TODO: Deployment test
+    override:
+      # Django Tests for Blog, Search & Accounts (Need to manually add to the end of this command)
+      - gulp test:local
+      - docker-compose run app sh -c "cd backend/ && mkdir -p _auto_circle-junit/django && py.test --junitxml=_auto_circle-junit/django/junit.xml apps/blog apps/search apps/accounts"
+      - mv docker/app/app/backend/_auto_circle-junit/django $CIRCLE_TEST_REPORTS/
+
+
+# deployment:
+#   production:
+#     branch: master
+#     commands:
+#       - docker login -e "$DOCKER_EMAIL" -u "$DOCKER_USER" -p "$DOCKER_PASS"
+#       - docker build -t "caarlos0/getantibody:$CIRCLE_BUILD_NUM" .
+#       - docker push "caarlos0/getantibody:$CIRCLE_BUILD_NUM"
+#       - sed -i'' -e "s;%BUILD_NUM%;$CIRCLE_BUILD_NUM;g" ./.deploy/Dockerrun.aws.json
+#       - cd .deploy && eb init -r us-east-1 getantibody
+#       - cd .deploy && eb deploy -l $CIRCLE_BUILD_NUM
+
+#test:
+#    override:
+        #CIRCLE_TEST_REPORTS=/home/ubuntu/docker-django-polymer/docker/app/app/backend/_auto_circle-junit
+        # WORKAROUND: WAITING FOR FIX - CREATE LOG FILES in github
+        #- docker-compose run app sh -c 'python ci.py && REUSE_DB=0 python backend/manage.py test --settings=project.settings.test blog' 
+#         - sleep 10
+#         - curl --retry 10 --retry-delay 5 -vk https://localhost:9443

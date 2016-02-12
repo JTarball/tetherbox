@@ -1,0 +1,122 @@
+ERROR 1454695377.271561 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 93 MainProcess  256 40 2016-02-05 18:02:57,271 base 93 140237847320320 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+ERROR 1454695575.403053 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 93 MainProcess  256 40 2016-02-05 18:06:15,403 base 93 140237847320320 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+ERROR 1454695585.861419 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 93 MainProcess  256 40 2016-02-05 18:06:25,861 base 93 140237847320320 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+ERROR 1454695592.503734 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 93 MainProcess  256 40 2016-02-05 18:06:32,503 base 93 140237847320320 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1454695768.507378 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 72 MainProcess  26 10 2016-02-05 18:09:28,507 views 72 140664993724160 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fef15065190>
+ERROR 1454695768.507831 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 72 MainProcess  256 40 2016-02-05 18:09:28,507 base 72 140664993724160 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'
+DEBUG 1454696459.715371 views.py subscription_callback_view DEBUG views /app/backend/apps/services/instagram/views.py 58 MainProcess  26 10 2016-02-05 18:20:59,715 views 58 140627757627136 subscription_callback_view, request: <rest_framework.request.Request object at 0x7fe669955150>
+ERROR 1454696459.715710 base.py handle_uncaught_exception ERROR base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 58 MainProcess  256 40 2016-02-05 18:20:59,715 base 58 140627757627136 Internal Server Error: /services/instagram/subscription_callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 466, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/views.py", line 463, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/decorators.py", line 53, in handler
+    return func(*args, **kwargs)
+  File "/app/backend/apps/services/instagram/views.py", line 33, in subscription_callback_view
+    x_hub_signature = request.header.get('X-Hub-Signature')
+  File "/usr/local/lib/python2.7/dist-packages/rest_framework/request.py", line 359, in __getattribute__
+    six.reraise(info[0], info[1], info[2].tb_next)
+  File "<string>", line 2, in reraise
+AttributeError: 'Request' object has no attribute 'header'

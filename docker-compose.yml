@@ -1,0 +1,44 @@
+# Docker Compose YML Config
+# This is the development style config
+app:
+  restart: always
+  build: docker/app
+  env_file:
+    - env_example
+  volumes:
+    - ./docker/app/app:/app
+  ports:
+    - "8000:8000"
+    - "3000:3000"
+    - "3001:3001"
+    - "5555:5555"
+  links:
+    - postgres:postgres
+    - redis:redis
+    - rabbitmq:rabbitmq
+
+
+redis:
+  restart: always
+  image: redis:latest
+  ports:
+    - "6379:6379"
+
+
+postgres:
+  restart: always
+  image: postgres:latest
+  volumes:
+     - /var/lib/postgresql
+  env_file:
+    - env_example
+  ports:
+    - "5432:5432"
+
+rabbitmq:
+  restart: always
+  image: rabbitmq:latest
+  env_file:
+    - env_example
+  ports:
+    - "5672:5672"

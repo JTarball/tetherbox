@@ -1,0 +1,3 @@
+WARNING 1454195683.728893 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 44 MainProcess  170 30 2016-01-30 23:14:43,728 base 44 140540328994560 Not Found: /favicon.ico
+WARNING 1454195719.076683 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 43 MainProcess  170 30 2016-01-30 23:15:19,076 base 43 140675106862848 Not Found: /
+WARNING 1454196594.732458 base.py get_response WARNING base /usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py 44 MainProcess  170 30 2016-01-30 23:29:54,732 base 44 140555647047424 Not Found: /blog/post/
