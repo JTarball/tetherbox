@@ -27,6 +27,7 @@ such requires requirements etc.
 
 #### How was the 'base' directory created?
 the base directory is a submodule from docker-base repo
+
 `git submodule add https://github.com/JTarball/docker-base.git base`
 
 #### How was the 'base' directory updated?
