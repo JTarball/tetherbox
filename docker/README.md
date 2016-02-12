@@ -25,6 +25,13 @@ This is the base docker image - os with some extras provisioning for webapps.
 Note you should never just use this on its own as it is meant as a 'base' as 
 such requires requirements etc.
 
+#### How was the 'base' directory created?
+the base directory is a submodule from docker-base repo
+git submodule add https://github.com/JTarball/docker-base.git base
+
+#### How was the 'base' directory updated?
+git submodule update --remote --merge 
+
 ### 'app' directory
 This is the main docker image used for this project. This folder contains a directory 
 which will contain all development files (django & polymer). This is shared for development.

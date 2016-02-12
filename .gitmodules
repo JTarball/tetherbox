@@ -1,0 +1,6 @@
+[submodule "docker/docker-base"]
+	path = docker/docker-base
+	url = https://github.com/JTarball/docker-base.git
+[submodule "docker/base"]
+	path = docker/base
+	url = https://github.com/JTarball/docker-base.git
