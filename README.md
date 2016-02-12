@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/JTarball/docker-django-polymer-starter-kit.svg?style=svg)](https://circleci.com/gh/JTarball/docker-django-polymer-starter-kit)
+[![Circle CI](https://circleci.com/gh/JTarball/tetherbox.svg?style=svg)](https://circleci.com/gh/JTarball/docker-django-polymer-starter-kit)
 
 
 <a href="http://www.djangoproject.com/" ><img src="https://www.djangoproject.com/m/img/badges/djangoproject120x25.gif" border="0" alt="A Django project." title="A Django project." style="float: right;" /></a>
