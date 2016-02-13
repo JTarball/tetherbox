@@ -19,7 +19,6 @@ testAlias+=(
 imageTests+=(
 	[$APP_TEST_IMAGE]='
 		python-imports
-		python-pip-requests-ssl
 		python-sqlite3
 	'
 )
