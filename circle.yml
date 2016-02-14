@@ -42,9 +42,15 @@ test:
     override:
       # Django Tests for Blog, Search & Accounts (Need to manually add to the end of this command)
       # - gulp test:local
-      - docker-compose -f test.yml run app sh -c "cd backend/ && mkdir -p _auto_circle-junit/django && py.test --junitxml=_auto_circle-junit/django/junit.xml apps/blog apps/search apps/accounts"
-      - sudo mkdir -p $CIRCLE_TEST_REPORTS/django
-      - sudo mv /home/ubuntu/tetherbox/docker/app/app/backend/_auto_circle-junit/django $CIRCLE_TEST_REPORTS/
+      #- docker-compose -f test.yml run app sh -c "cd backend/ && mkdir -p _auto_circle-junit/django && py.test --junitxml=_auto_circle-junit/django/junit.xml apps/blog apps/search apps/accounts"
+      #- sudo mkdir -p $CIRCLE_TEST_REPORTS/django
+      #- sudo mv /home/ubuntu/tetherbox/docker/app/app/backend/_auto_circle-junit/django $CIRCLE_TEST_REPORTS/
+      # APP_DIR START
+      # need to save junit results inside app within docker container then copy to CIRCLE_TEST_REPORTS
+      - docker-compose -f test.yml run app sh -c "cd backend/ && mkdir -p circle-junit/django && py.test --junitxml=circle-junit/django/junit.xml apps/blog apps/search apps/accounts"
+      - mkdir -p $CIRCLE_TEST_REPORTS/django
+      - mv /home/ubuntu/docker-django-polymer/docker/app/app/backend/circle-junit/django $CIRCLE_TEST_REPORTS/
+
 
 
 # deployment:
