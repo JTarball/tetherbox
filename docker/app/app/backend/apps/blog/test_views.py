@@ -142,7 +142,7 @@ class TestPostListByYear(APITestCase):
         self.superadmin = G(AccountsUser, is_superuser=True, is_staff=True)
         self.superadmin_not_staff = G(AccountsUser, is_superuser=True, is_staff=False)
         self.client = APIClient()
-        self.year = "2015"
+        self.year = "%s" % datetime.datetime.now().year
         self.url = reverse('blog:list_year', kwargs={'year': self.year})
 
     def test_post_posts_forbidden_normal_user(self):
